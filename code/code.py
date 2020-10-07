@@ -42,6 +42,7 @@ extension_lang_map = {
     "hpp": "cplusplus",
     "lua": "lua",
     "md": "markdown",
+    "org": "org",
     "pl": "perl",
     "ps1": "powershell",
     "py": "python",
@@ -55,6 +56,8 @@ extension_lang_map = {
     "js": "javascript",
     "ts": "typescript",
     "r": "r",
+    "rkt": "racket",
+    "rs": "rust",
 }
 
 # flag indicates whether or not the title tracking is enabled
