@@ -54,15 +54,12 @@ extension_lang_map = {
     "snippets": "snippets",
     "talon": "talon",
     "ts": "typescript",
-<<<<<<< HEAD
     "r": "r",
     "rkt": "racket",
     "rs": "rust",
-=======
     "vba": "vba",
     "vim": "vimscript",
     "vimrc": "vimscript",
->>>>>>> 5826badf7fc60db2b1b6071b6bfc0bb18ecc2d4c
 }
 
 # flag indicates whether or not the title tracking is enabled
