@@ -7,6 +7,8 @@ i'm fed up:
 
 butter <number>:
   key("space {number}")
+butter belly:
+  key("space b b")
 butter scratch:
   key(space b s)
 butter home:
