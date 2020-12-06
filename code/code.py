@@ -1,7 +1,4 @@
-import os
-import re
-
-from talon import Context, Module, actions, app, fs, imgui, registry, settings, ui
+from talon import Context, Module, actions, app, imgui, registry, settings
 
 ctx = Context()
 mod = Module()
@@ -21,6 +18,7 @@ setting_protected_variable_formatter = mod.setting(
 setting_public_variable_formatter = mod.setting("code_public_variable_formatter", str)
 
 mod.tag("code_comment", desc="Tag for enabling generic comment commands")
+mod.tag("code_block_comment", desc="Tag for enabling generic block comment commands")
 mod.tag("code_operators", desc="Tag for enabling generic operator commands")
 mod.tag(
     "code_generic",
@@ -34,30 +32,37 @@ extension_lang_map = {
     "asm": "assembly",
     "bat": "batch",
     "c": "c",
+    "cmake": "cmake",
     "cpp": "cplusplus",
     "cs": "csharp",
     "gdb": "gdb",
     "go": "go",
     "h": "c",
     "hpp": "cplusplus",
+    "js": "javascript",
+    "json": "json",
     "lua": "lua",
     "md": "markdown",
     "org": "org",
     "pl": "perl",
     "ps1": "powershell",
     "py": "python",
+    "r": "r",
     "rb": "ruby",
     "s": "assembly",
     "sh": "bash",
     "snippets": "snippets",
     "talon": "talon",
-    "vba": "vba",
-    "vim": "vim",
-    "js": "javascript",
     "ts": "typescript",
+<<<<<<< HEAD
     "r": "r",
     "rkt": "racket",
     "rs": "rust",
+=======
+    "vba": "vba",
+    "vim": "vimscript",
+    "vimrc": "vimscript",
+>>>>>>> 5826badf7fc60db2b1b6071b6bfc0bb18ecc2d4c
 }
 
 # flag indicates whether or not the title tracking is enabled
