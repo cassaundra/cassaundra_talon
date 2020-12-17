@@ -11,6 +11,11 @@ word iter: "iter"
 #word dup: "dup"
 word shell: "shell"
 word read it: "reddit"
+word todo: "TODO"
+word prog: "PROG"
+word fix me: "FIXME"
+word triple ex: "XXX"
+word hack: "HACK"
 zoom in: edit.zoom_in()
 zoom out: edit.zoom_out()
 (page | scroll) up: key(pgup)

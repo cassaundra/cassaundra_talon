@@ -73,3 +73,8 @@ action(browser.submit_form):
 
 action(browser.toggle_dev_tools):
 	key(ctrl-shift-i)
+
+tab left: key(ctrl-shift-tab)
+tab right: key(ctrl-tab)
+
+picture in picture: key(ctrl-shift-])

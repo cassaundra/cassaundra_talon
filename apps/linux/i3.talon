@@ -49,7 +49,12 @@ gunner resize:
 gunner launch:
   key(super-;)
 
-gunner maxim:
+gunner program:
+  key(super-d)
+gunner (application|app):
+  key(super-shift-d)
+
+gunner (fullscreen|maxim|maximize):
   key(super-f)
 gunner float:
   key(super-shift-space)

@@ -14,3 +14,6 @@ dual:
   key(d)
 dark:
   key(ctrl-i)
+
+sidebar:
+  key(f9)

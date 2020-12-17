@@ -33,3 +33,18 @@ code:
 strikethrough:
     insert("++")
     edit.left()
+
+insert heading:
+  key(escape , i H)
+insert heading (before | above):
+  key(escape , i h)
+insert subheading:
+  key(escape , i s)
+
+promote:
+  key(escape , s h end)
+demote:
+  key(escape , s l end)
+
+new item:
+  key(escape o)
