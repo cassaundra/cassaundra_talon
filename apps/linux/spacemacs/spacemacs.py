@@ -32,3 +32,9 @@ class win_actions:
         if m:
             return m.group(3)
         return ""
+
+@ctx.action_class("user")
+class user_actions:
+    def paste(text: str):
+        """Pastes text and preserves clipboard"""
+        actions.insert(text)

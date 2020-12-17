@@ -53,8 +53,10 @@ space max restart:
 [(window|winner)] (swap|pop|last|blast):
   key(escape space w tab)
 
-((file|friend) save|savant):
+[file|friend] (save|savant):
   key(escape space f s)
+(file|friend) save all:
+  key(escape space f S)
 scram:
   key(escape space f s space b d)
 (file|friend) finder:
@@ -65,6 +67,8 @@ scram:
   key(escape space f D)
 (file|friend) rename:
   key(escape space f R)
+(file|friend) copy:
+  key(escape space f c)
 (file|friend) tree:
   key(escape space f t)
 (file|friend) path:
@@ -72,10 +76,20 @@ scram:
 (file|friend) name:
   key(escape space f y n)
 
-(project|profit) friend:
+(project|profit) (file|friend):
   key(escape space p f)
 (project|profit) recent:
   key(escape space p r)
+(project|profit helm:
+  key(escape space p h)
+(project|profit) (directories|dirs):
+  key(escape space p d)
+(project|profit) compile:
+  key(escape space p c)
+(project|profit) replace:
+  key(escape space p r)
+(project|profit) replace regex:
+  key(escape space p %)
 
 (layout|ladder) (swap|pop|last|blast):
   key(escape space l tab)
@@ -88,6 +102,8 @@ major: insert(",")
 
 gitter status:
   key(escape space g s)
+gitter (initialize|init):
+  key(escape space g i)
 
 jumper:
   key(escape space j w)
@@ -179,9 +195,9 @@ undo:
   key(ctrl-_)
 redo:
   key(ctrl-r)
-page top:
+scroll top:
   key(g g)
-page bottom:
+scroll bottom:
   key(G)
 find it:
   key(f)
@@ -190,9 +206,7 @@ next one:
 
 select word:
   key(escape v i w)
-select word:
-  key(escape v i w)
-select line|shackle:
+(select line|shackle):
   key(escape V)
 select all:
   key(escape g g V G)
@@ -202,7 +216,7 @@ down: key(ctrl-d)
 
 change till:
   key(escape c t)
-changed till end:
+change till end:
   key(escape c $)
 change through:
   key(escape c f)
@@ -260,3 +274,8 @@ randomize lines:
   key(escape o)
 [insert] [new] line above:
   key(escape O)
+
+compile:
+  key(escape space c C)
+recompile:
+  key(escape space c r)
