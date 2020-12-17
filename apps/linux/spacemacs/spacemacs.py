@@ -11,7 +11,7 @@ apps.spacemacs = """
 os:linux
 app: /emacs/"""
 
-regex_ext = re.compile("(([^\\s<>\\.]+)(?:\\.([a-zA-Z]+))?)(?:<(\\S+)>)?")
+regex_ext = re.compile("(([^\\.]+)(?:\\.(\\S+))?) - ([^@\\s]+)@(\\S+)")
 
 @ctx.action_class("win")
 class win_actions:
