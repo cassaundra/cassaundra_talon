@@ -2,126 +2,149 @@ os:linux
 app: /emacs/
 -
 
-i'm fed up:
+space max config:
   key(space f e d)
+space max quit:
+  key(space q q)
+space max restart:
+  key(space q r)
 
-butter <number>:
-  key("space {number}")
-butter belly:
-  key("space b b")
-butter scratch:
-  key(space b s)
-butter home:
-  key(space b h)
-butter drop:
-  key(space b d)
-butter move <number>:
-  key("space b {number}")
-butter undo:
-  key(space b u)
-butter blast:
-  key(space tab)
+(buffer|butter) <number>:
+  key("escape space {number}")
+(buffer|butter) belly:
+  key(escape "space b b")
+(buffer|butter) scratch:
+  key(escape space b s)
+(buffer|butter) home:
+  key(escape space b h)
+(buffer|butter) drop:
+  key(escape space b d)
+(buffer|butter) move <number>:
+  key("escape space b {number}")
+(buffer|butter) swap <number>:
+  key("escape space b . alt-{number} escape")
+(buffer|butter) undo:
+  key(escape space b u)
+(buffer|butter) (swap|pop|last|blast):
+  key(escape space tab)
 
-winner drop:
-  key(space w d)
-winner maxim:
-  key(space w m)
-winner undo:
-  key(space w u)
-winner split vertical:
-  key(space w v)
-winner split horizontal:
-  key(space w s)
-winner move left:
-  key(space w H)
-winner move right:
-  key(space w L)
-winner move down:
-  key(space w J)
-winner move up:
-  key(space w K)
-winner transient:
-  key(space w .)
+(window|winner) drop:
+  key(escape space w d)
+(window|winner) maxim:
+  key(escape space w m)
+(window|winner) undo:
+  key(escape space w u)
+(window|winner) split [vertical]:
+  key(escape space w v)
+(window|winner) split horizontal:
+  key(escape space w s)
+(window|winner) move left:
+  key(escape space w H)
+(window|winner) move right:
+  key(escape space w L)
+(window|winner) move down:
+  key(escape space w J)
+(window|winner) move up:
+  key(escape space w K)
+(window|winner) transient:
+  key(escape space w .)
+(window|winner) balance:
+  key(escape space w =)
+[(window|winner)] (swap|pop|last|blast):
+  key(escape space w tab)
 
-savant:
-  key(space f s)
+((file|friend) save|savant):
+  key(escape space f s)
 scram:
-  key(space f s space b d)
-friend finder:
-  key(space f f)
-friend recent:
-  key(space f r)
-friend delete:
-  key(space f D)
-friend rename:
-  key(space f R)
-friend tree:
-  key(space f t)
-friend path:
-  key(space f y y)
+  key(escape space f s space b d)
+(file|friend) finder:
+  key(escape space f f)
+(file|friend) recent:
+  key(escape space f r)
+(file|friend) delete:
+  key(escape space f D)
+(file|friend) rename:
+  key(escape space f R)
+(file|friend) tree:
+  key(escape space f t)
+(file|friend) path:
+  key(escape space f y y)
+(file|friend) name:
+  key(escape space f y n)
 
-profit friend:
-  key(space p f)
-profit recent:
-  key(space p r)
+(project|profit) friend:
+  key(escape space p f)
+(project|profit) recent:
+  key(escape space p r)
 
-lawyer blast:
-  key(space l tab)
-lawyer <number>:
-  key("space l {number}")
+(layout|ladder) (swap|pop|last|blast):
+  key(escape space l tab)
+(layout|ladder) new:
+  key(escape space l l)
+(layout|ladder) <number>:
+  key("escape space l {number}")
 
 major: insert(",")
 
 gitter status:
-  key(space g s)
+  key(escape space g s)
 
 jumper:
-  key(space j j)
-jump word:
-  key(space j w)
+  key(escape space j w)
 jump line:
-  key(space j l)
+  key(escape space j l)
 jump item:
-  key(space j i)
-porter:
-  key("g g")
+  key(escape space j i)
+jump file:
+  key(escape space j d)
+jump last:
+  key(escape space j c)
+# porter:
+#   key("g g")
 
 toggle center:
-  key(space t ctrl-minus)
+  key(escape space t ctrl-minus)
 toggle golden:
-  key(space t g)
+  key(escape space t g)
+toggle visual line:
+  key(escape space t L)
 toggle line:
-  key(space t f)
+  key(escape space t f)
 toggle whitespace:
-  key(space t w)
+  key(escape space t w)
 toggle wrap:
-  key(space t l)
+  key(escape space t l)
 toggle marks:
-  key(space t `)
+  key(escape space t `)
+toggle [line] numbers:
+  key(escape space t n v)
+toggle syntax [check]:
+  key(escape space t s)
 
-snippet:
-  key(space i s)
+[insert] snippet:
+  key(escape space i s)
+
+swoop:
+  key(escape space s s)
+swoop project:
+  key(escape space s ctrl-s)
+
+(no|clear) (highlight|highlighting):
+  key(escape space s c)
 
 zipper:
-  key(z z)
+  key(escape z z)
 
-slurp:
-  key(space space)
+meta ex:
+  key(escape alt-x)
 
 ripper:
-  key(space /)
+  key(escape space /)
 
 themer:
   key(space T s)
-
-cargo execute:
-  key(, c x)
-cargo build:
-  key(, c c)
-cargo repeat:
-  key(, c .)
-cargo format:
-  key(, =)
+themer next:
+  key(space T n)
 
 roger:
   key(escape a)
@@ -130,48 +153,232 @@ disregard:
 fix <number>:
   key("escape v {number} b h c")
 
+(sert|insert):
+  key(i)
+append:
+  key(a)
+pendant:
+  key(escape $ a)
 homer:
   key(escape _)
-endian:
-  key(escape $)
-sparse:
-  key(a)
-sert:
-  key(i)
 forward:
-  key(W)
+  key(escape W)
 backward:
-  key(B)
-select word:
-  key(v i w)
-shackle:
-  key(V)
-changer:
-  key(c i w)
-switcher:
-  key(S)
+  key(escape B)
+change it:
+  key(escape c i w)
+drop it:
+  key(escape d i w)
+switch it:
+  key(escape S)
 deleter:
-  key(d d)
+  key(escape d d)
 paste:
-  key(p)
+  key(escape p)
+undo:
+  key(ctrl-_)
+redo:
+  key(ctrl-r)
+page top:
+  key(g g)
+page bottom:
+  key(G)
+find it:
+  key(f)
+next one:
+  key(n)
+
+select word:
+  key(escape v i w)
+select word:
+  key(escape v i w)
+select line|shackle:
+  key(escape V)
+select all:
+  key(escape g g V G)
+
+up: key(ctrl-u)
+down: key(ctrl-d)
 
 change till:
-  key(c t)
+  key(escape c t)
+changed till end:
+  key(escape c $)
 change through:
-  key(c f)
+  key(escape c f)
 back change till:
-  key(c T)
+  key(escape c T)
 back change through:
-  key(c F)
+  key(escape c F)
 
 drop till:
-  key(d t)
+  key(escape d t)
+drop till end:
+  key(escape d $)
 drop through:
-  key(d f)
-back delete till:
-  key(d T)
-back delete through:
-  key(d F)
+  key(escape d f)
+back drop till:
+  key(escape d T)
+back drop through:
+  key(escape d F)
 
-agenda:
-  key(space a o a)
+change inside:
+  key(escape c i)
+change surrounding:
+  key(escape c s)
+
+drop inside:
+  key(escape d i)
+drop surrounding:
+  key(escape d s)
+drop word:
+  key(d w)
+drop inside word:
+  key(d i w)
+
+comment [line|lines|this|it]:
+  key(space c l)
+
+[show] agenda:
+  key(escape space a o a)
+[show] agenda todo:
+  key(escape space a o t)
+
+narrow region:
+  key(escape space n r)
+narrow region indirect:
+  key(escape space n R)
+widen:
+  key(escape space n w)
+
+sort lines:
+  key(escape space x l s)
+randomize lines:
+  key(escape space x l r)
+
+[insert] [new] line:
+  key(escape o)
+[insert] [new] line above:
+  key(escape O)
+
+# scuba:
+#   insert("funk ")
+# flipper:
+#   insert(": \"(")
+# sink:
+#   insert(" \"")
+#   key(enter)
+
+# splatter:
+#   key(escape home v $ h y)
+
+#   key(escape V)
+#   insert(":s/\\(.+\\)\\?/is \\1")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/\\(.+\\)\\*\\(.*\\)$/\\1\\2 (star|many|multiple)")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/\\(.+\\)\\/c$/\\1 contract")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/\\(.+\\)%$/\\1 type")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/\\(.+\\)<%>$/\\1 generic type")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/\\(.+\\)\\+/\\1 (plus|add)")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/\\(.+\\)!/\\1 (bang|mute)")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/->/ to /g")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/-/ /g")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/\// /g")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/\\beq\\b/equal/g")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/\\beqv\\b/equivalent/g")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/\\bmemv\\b/member equivalent/g")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/\\bmemq\\b/member (equals|equal [to])/g")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/\\bmemf\\b/find member/g")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/\\bref\\b/(reference|ref)/g")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/<=/ less than or (equals|equal [to])/g")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/>=/ greater than or (equals|equal [to])/g")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/</ less than/g")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/>/ less than/g")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/=/ (equals|equal [to])/g")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/prop:\\(.+\\)/\\1 (property|prop)")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/exn:\\(.+\\)/exception \\1")
+#   key(enter)
+  
+#   key(escape V)
+#   insert(":s/:/ /g")
+#   key(enter)
+
+#   key(escape V)
+#   insert(":s/gen:\\(.+\\)/\\1 (generic|gen)")
+#   key(enter)
+  
+#   key(home i)
+#   insert("funk ")
+
+#   key(end)
+#   insert(": \"(")
+#   key(escape p)
+
+#   key(a space delete escape)
+#   sleep(0.1)
+#   key(down home)
