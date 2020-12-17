@@ -26,9 +26,9 @@ gunner move down:
 gunner move up:
   key(super-shift-k)
 
-gunner slide left:
+gunner (move workspace|slide) left:
   key(super-shift-[)
-gunner slide right:
+gunner (move workspace|slide) right:
   key(super-shift-])
 
 gunner left:
